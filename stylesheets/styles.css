@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan");
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@800");
+
+body {
+  height: auto;
+  min-height: 100vh;
+  font: 100%/1.5 "Spartan", sans-serif;
+}
+
+main.container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  min-height: 100vh;
+  padding: 72px 28px;
+  margin: 0 auto;
+  gap: 2.5rem;
+  background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+  background-position: center top, center bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100%, 100%;
+}
+
+  .header {
+    text-align: center;
+  }
+    .header__title {
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1;
+      color: #502050;
+    }
+    .header__paragraph {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #937b92;
+    }
+
+  .reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+  }
+    .reviews__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.25rem;
+      width: 100%;
+      padding: 1rem;
+      border-radius: 8px;
+      background-color:  #f7f2f7;
+    }
+      .reviews__icons > .reviews__single-icon {
+        margin: 0 1.5px;
+      }
+    .reviews__title {
+      font-weight: 700;
+      color: #502050;
+    }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;    
+  }
+    .cards__item {
+      padding: 2rem;
+      color: white;
+      border-radius: 8px;
+      background-color: #502050;
+    }
+      .cards__header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.8rem;
+      }
+        .cards__picture {
+          display: block;
+          width: 2.8rem;
+          border-radius: 50%;
+        }
+        .cards__client-info {
+          margin-left: 1.5rem;
+        }
+          .cards__name {
+            font-weight: 700;
+            color: #f7f2f7;
+          }
+          .cards__stats {
+            font-weight: 400;
+            color: #ee68a4;
+          }
+      .cards__comment {
+        font-weight: 500;
+        color: hsl(300, 24%, 96%);
+      }
+
+@media screen and (min-width: 1024px) {
+  main.container {
+    grid-template-columns: 1fr 1.2fr;
+    grid-template-rows: 1fr minmax(15rem, 1fr);
+    max-width: 1400px;
+    padding: 88px 108px;
+    gap: 4rem 6.5rem;
+    background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+    background-position: left top, right bottom;
+    background-size: 50%, 100%;
+  }
+  
+    .header {
+      align-self: center;
+      text-align: left;
+    }
+      .header__title {
+        font-size: 3.2rem;
+      }
+  
+    .reviews {
+      align-self: center;
+    }
+      .reviews__item {
+        flex-direction: row;
+        width: 85%;
+        padding: 1.5rem 2rem;
+      }
+      .reviews__item:nth-child(1) {
+        align-self: flex-start;
+      }
+      .reviews__item:nth-child(2) {
+        align-self: center;
+      }
+      .reviews__item:nth-child(3) {
+        align-self: flex-end;
+      }
+        .reviews__icons {
+          display: flex;
+          align-items: center;
+          margin-right: 2rem;
+        }
+  
+    .cards {
+      grid-column: 1/3;
+      flex-direction: row;
+    }
+      .cards__item {
+        height: 85%;
+        font-size: 0.9rem;
+      }
+      .cards__item:nth-child(1) {
+        align-self: flex-start;
+      }
+      .cards__item:nth-child(2) {
+        align-self: center;
+      }
+      .cards__item:nth-child(3) {
+        align-self: flex-end;
+      }
+}
