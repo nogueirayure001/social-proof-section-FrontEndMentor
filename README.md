@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL]()
-- Live Site URL: [site URL]()
+- Solution URL: [solution URL](https://github.com/nogyuuu/social-proof-section-FrontEndMentor)
+- Live Site URL: [site URL](https://nogyuuu.github.io/social-proof-section-FrontEndMentor/)
 
 ## My process
 
